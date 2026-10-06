@@ -1,0 +1,39 @@
+{
+  "name": "carla-wiring",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "test": "node scripts/run-tests.mjs",
+    "test:rust": "cargo test --manifest-path crates/carla_core/Cargo.toml"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "^2.0.0",
+    "@tauri-apps/plugin-dialog": "^2.0.0"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "^2.0.0",
+    "@types/node": "^22.0.0",
+    "jsdom": "^25.0.0",
+    "@types/jsdom": "^21.1.7",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0",
+    "vite": "^5.4.0"
+  },
+  "description": "Prépare le patchbay de Carla : construit des chaînes de plugins par recettes de sons (sans IA obligatoire), applique presets et états, exporte un .carxp.",
+  "license": "MIT",
+  "keywords": [
+    "carla",
+    "patchbay",
+    "vst",
+    "vst3",
+    "tauri",
+    "guitar",
+    "presets",
+    "carxp"
+  ]
+}
